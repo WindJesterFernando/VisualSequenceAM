@@ -20,13 +20,19 @@ public class TimedAction
 
     }
 
+    public TimedAction(float actionLength)
+    {
+        this.actionLength = actionLength;
+    }
+
 }
 
 public class DebugLogTextAction : TimedAction
 {
     string textToSpitOut;
 
-    public DebugLogTextAction(string textToSpitOut)
+    public DebugLogTextAction(string textToSpitOut, float actionLength)
+        :base(actionLength)
     {
         this.textToSpitOut = textToSpitOut;
     }
@@ -39,25 +45,25 @@ public class DebugLogTextAction : TimedAction
 }
 
 
-public class MoveCameraAction : TimedAction
-{
+// public class MoveCameraAction : TimedAction
+// {
 
-    override public void PerformAction()
-    {
-        //Debug.Log(textToSpitOut);
-    }
+//     override public void PerformAction()
+//     {
+//         //Debug.Log(textToSpitOut);
+//     }
 
-}
+// }
 
-public class ChangeLightingAction : TimedAction
-{
+// public class ChangeLightingAction : TimedAction
+// {
 
-    override public void PerformAction()
-    {
-        //Debug.Log(textToSpitOut);
-    }
+//     override public void PerformAction()
+//     {
+//         //Debug.Log(textToSpitOut);
+//     }
 
-}
+// }
 
 
 

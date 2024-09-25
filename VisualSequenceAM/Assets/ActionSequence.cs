@@ -20,7 +20,10 @@ public class ActionSequence : MonoBehaviour {
     {
         actionSequence = new List<TimedAction>();
 
-        actionSequence.Add(new DebugLogTextAction());
+        actionSequence.Add(new DebugLogTextAction("Hello World", 5f));
+        actionSequence.Add(new DebugLogTextAction("Hello 2", 5f));
+        actionSequence.Add(new DebugLogTextAction("Hello 3", 5f));
+
     }
 
     public void Update()
