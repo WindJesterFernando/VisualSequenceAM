@@ -1,0 +1,42 @@
+
+///What's the porblem?
+//
+//This entire thing is an actionSequence
+//TimedAction
+//
+//Perform actions in a sequence
+//Define an action - takes time and has an end - is a class, abstact/virtual, many children classes
+//Action child classes have more definition.
+//??repeatable???
+//
+//
+//iterate on TimedAction class to make pure astract
+//
+//
+//spit out text in debug log
+//spit out text one letter at a time
+//delay between previous action and next action
+//zoom in camera
+//move camera
+//darken lights
+//sprite frame change
+//play voiceline
+//change lighting color
+//
+//
+//enemy frame animation
+//spawn additonal animating sprite
+//dmg text
+//perform the dmg-ing effect onto characters
+//
+//move sprite
+//
+//
+
+//make it so it takes time to complete action and between actions
+//do we need to know what the previous/next action was?
+//
+//order
+//a list of actions, that we perform in the order that inputed into the list
+//the actionSequence (the list of actions), performs + something-smethig time
+//
